@@ -14,9 +14,9 @@ const config = {
   height: DEFAULT_HEIGHT,
   scene: [SplashScreen, Game],
   physics: {
-    default: 'arcade',
-    arcade: {
-      debug: false
+    default: 'matter',
+    matter: {
+      debug: true
     }
   }
 };

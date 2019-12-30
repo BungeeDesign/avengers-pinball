@@ -23,6 +23,10 @@ class SplashScreen extends Phaser.Scene {
     this.load.image('board', 'board.png');
     this.load.image('leftPaddle', 'left-paddle.png');
     this.load.image('rightPaddle', 'right-paddle.png');
+    this.load.image('pinball', 'pinball.png');
+
+    // P2 Physics
+    this.load.json('shapes', '../matter/shapes.json')
   }
 
   create() {

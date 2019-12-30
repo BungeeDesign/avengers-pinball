@@ -1,0 +1,77 @@
+{
+	"generator_info": "Shape definitions generated with PhysicsEditor. Visit https://www.codeandweb.com/physicseditor",
+	"leftPaddle": {
+		"type": "fromPhysicsEditor",
+		"label": "leftPaddle",
+		"isStatic": false,
+		"density": 0.1,
+		"restitution": 0,
+		"friction": 0.1,
+		"frictionAir": 0.01,
+		"frictionStatic": 0.5,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"vertices": [
+					[ { "x":10, "y":1 }, { "x":2, "y":14 }, { "x":62, "y":43 }, { "x":64, "y":39 } ]
+				]
+			}
+		]
+	},
+	"rightPaddle": {
+		"type": "fromPhysicsEditor",
+		"label": "rightPaddle",
+		"isStatic": false,
+		"density": 0.10000000149011612,
+		"restitution": 0,
+		"friction": 0.10000000149011612,
+		"frictionAir": 0.009999999776482582,
+		"frictionStatic": 0.5,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"vertices": [
+					[ { "x":56, "y":1 }, { "x":2, "y":39 }, { "x":4, "y":43 }, { "x":64, "y":14 } ]
+				]
+			}
+		]
+	},
+	"pinball": {
+		"type": "fromPhysicsEditor",
+		"label": "pinball",
+		"isStatic": false,
+		"density": 0.10000000149011612,
+		"restitution": 0,
+		"friction": 0.10000000149011612,
+		"frictionAir": 0.009999999776482582,
+		"frictionStatic": 0.5,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"circle": {
+					"x": 22.832369942196532,
+					"y": 22.878612716763005,
+					"radius": 22.313986589746705
+				}
+			}
+		]
+	}
+}
