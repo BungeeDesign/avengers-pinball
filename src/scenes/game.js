@@ -18,6 +18,7 @@ class Game extends Phaser.Scene {
 
     this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle });
     this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle });
+    this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher });
     this.pinball = this.matter.add.sprite(centerX, centerY, 'pinball', null, { shape: shapes.pinball });
 
     // Tempoary Side Guards
@@ -42,6 +43,8 @@ class Game extends Phaser.Scene {
     this.rightPaddle.setStatic(true);
     this.rightPaddle.setFriction(0, 0, 0);
     this.rightPaddle.setBounce(0.2);
+
+    this.baseCatcher.setStatic(true);
 
     // this.pinball.setDensity(5.5);
     this.pinball.setFriction(0, 0, 0);
