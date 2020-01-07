@@ -11,6 +11,15 @@ class Game extends Phaser.Scene {
 
     let board = this.add.sprite(centerX, centerY, 'board');
 
+    let guard = '0 0 0 600 20 600 20 0';
+    let sideGuard = this.add.polygon(centerX - 236, 400, guard, 0xED1C24, 1);
+    sideGuard.setAlpha(0);
+    this.matter.add.gameObject(sideGuard, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: 0.03 });
+
+    let sideGuardLeft = this.add.polygon(centerX + 230, 400, guard, 0xED1C24, 1);
+    sideGuardLeft.setAlpha(0);
+    this.matter.add.gameObject(sideGuardLeft, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: -0.03 });
+
     /*
       Center the paddles via an offset value from the centerX value. A container could of been used but as the container has children
       the physics bodies would be offset.
@@ -19,20 +28,10 @@ class Game extends Phaser.Scene {
     this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle });
     this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle });
     this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher });
-    this.pinball = this.matter.add.sprite(centerX, centerY, 'pinball', null, { shape: shapes.pinball });
-
-    // Tempoary Side Guards
-    let guard = '0 0 0 440 20 440 20 0';
-    let guardTop = '0 0 0 20 440 20 440 0';
-
-    let sideGuard = this.add.polygon(centerX - 170, 450, guard, 0xED1C24, 1);
-    this.matter.add.gameObject(sideGuard, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: -0.3 });
-
-    let sideGuardRight = this.add.polygon(centerX + 170, 450, guard, 0xED1C24, 1);
-    this.matter.add.gameObject(sideGuardRight, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: 0.3 });
-
-    let topGuard = this.add.polygon(centerX, 200, guardTop, 0xED1C24, 1);
-    this.matter.add.gameObject(topGuard, { shape: { type: 'fromVerts', verts: guardTop, flagInternal: true }, isStatic: true, angle: 0 });
+    this.launchGuard = this.matter.add.sprite(centerX + 190, 397, 'launchGuard', null, { shape: shapes.launchGuard });
+    this.cycGuard = this.matter.add.sprite(centerX, 15, 'cycGuard', null, { shape: shapes.cycGuard });
+    this.launcher = this.matter.add.sprite(centerX + 213, 595, 'launcher', null, { shape: shapes.launcher });
+    this.pinball = this.matter.add.sprite(centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
 
     // Physics
     this.leftPaddle.setStatic(true);
@@ -45,11 +44,19 @@ class Game extends Phaser.Scene {
     this.rightPaddle.setBounce(0.2);
 
     this.baseCatcher.setStatic(true);
+    this.launchGuard.setStatic(true);
+    this.cycGuard.setStatic(true);
+    this.launcher.setStatic(true);
 
     // this.pinball.setDensity(5.5);
     this.pinball.setFriction(0, 0, 0);
     this.pinball.setVelocity(1, 5);
     this.pinball.setBounce(0.1);
+    this.pinball.setScale(0.45);
+
+    // Depth Sorting
+    this.launchGuard.setDepth(4);
+    this.baseCatcher.setDepth(5);
     
   }
 
@@ -94,6 +101,22 @@ class Game extends Phaser.Scene {
     }
   }
 
+  moveLauncher(launcher) {
+    this.tweens.add({
+      targets: launcher,
+      y: 620,
+      duration: 50,
+      ease: 'Power2',
+      yoyo: false,
+      delay: 0,
+      onComplete: () => {
+        launcher.setVelocity(2, -12);
+        launcher.setBounce(1);
+        this.tweens.add({ targets: launcher, y: 595, duration: 50, ease: 'Power2'});
+      }
+    });
+  }
+
   update() {
     let keys = this.input.keyboard.addKeys({
       up: 'up',
@@ -108,6 +131,10 @@ class Game extends Phaser.Scene {
     
     if (keys.right.isDown) {
       this.movePaddles(this.rightPaddle);
+    }
+
+    if (keys.down.isDown) {
+      this.moveLauncher(this.launcher);
     }
   }
 }
