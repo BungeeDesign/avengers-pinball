@@ -67,9 +67,9 @@
 				"label": "",
 				"isSensor": false,
 				"circle": {
-					"x": 22.832369942196532,
-					"y": 22.878612716763005,
-					"radius": 22.313986589746705
+					"x": 12.957746478873238,
+					"y": 13.042253521126762,
+					"radius": 11.030409140146366
 				}
 			}
 		]
@@ -187,6 +187,32 @@
 					[ { "x":2, "y":5 }, { "x":3, "y":8 }, { "x":29, "y":8 }, { "x":28, "y":2 }, { "x":11, "y":2 }, { "x":6, "y":3 } ],
 					[ { "x":33, "y":8 }, { "x":34, "y":5 }, { "x":32, "y":3 }, { "x":28, "y":2 }, { "x":29, "y":8 } ]
 				]
+			}
+		]
+	},
+	"captinAmericaBumper": {
+		"type": "fromPhysicsEditor",
+		"label": "captinAmericaBumper",
+		"isStatic": false,
+		"density": 0.10000000149011612,
+		"restitution": 0,
+		"friction": 0.10000000149011612,
+		"frictionAir": 0.009999999776482582,
+		"frictionStatic": 0.5,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"circle": {
+					"x": 65.07042253521126,
+					"y": 61.59154929577465,
+					"radius": 60.053128388906444
+				}
 			}
 		]
 	}

@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 import SplashScreen from './scenes/splash-screen';
 import Game from './scenes/game';
+import PhaserMatterCollisionPlugin from "phaser-matter-collision-plugin";
 
 const DEFAULT_WIDTH = 500;
 const DEFAULT_HEIGHT = 800;
@@ -16,8 +17,17 @@ const config = {
   physics: {
     default: 'matter',
     matter: {
-      debug: true
+      debug: false
     }
+  },
+  plugins: {
+    scene: [
+      {
+        plugin: PhaserMatterCollisionPlugin,
+        key: "matterCollision",
+        mapping: "matterCollision"
+      }
+    ]
   }
 };
 

@@ -20,7 +20,7 @@ class SplashScreen extends Phaser.Scene {
     // Show the loader.
     this.showLoader();    
     this.load.setBaseURL('src/assets/img');
-    this.load.image('board', 'board.png');
+    this.load.image('board', 'board-base.png');
     this.load.image('pinball', 'pinball.png');
     this.load.image('leftPaddle', 'left-paddle.png');
     this.load.image('rightPaddle', 'right-paddle.png');
@@ -28,6 +28,7 @@ class SplashScreen extends Phaser.Scene {
     this.load.image('launchGuard', 'launch-guard.png');
     this.load.image('launcher', 'launcher.png');
     this.load.image('cycGuard', 'cyc-guard.png');
+    this.load.image('captinAmericaBumper', 'captin-america-bumper.png');
 
     // P2 Physics
     this.load.json('shapes', '../matter/shapes.json')

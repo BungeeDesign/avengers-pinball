@@ -28,36 +28,52 @@ class Game extends Phaser.Scene {
     this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle });
     this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle });
     this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher });
-    this.launchGuard = this.matter.add.sprite(centerX + 190, 397, 'launchGuard', null, { shape: shapes.launchGuard });
-    this.cycGuard = this.matter.add.sprite(centerX, 15, 'cycGuard', null, { shape: shapes.cycGuard });
+    this.launchGuard = this.matter.add.sprite(centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard });
+    this.cycGuard = this.matter.add.sprite(centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard });
     this.launcher = this.matter.add.sprite(centerX + 213, 595, 'launcher', null, { shape: shapes.launcher });
+    this.captinAmericaBumper = this.matter.add.sprite(centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper });
     this.pinball = this.matter.add.sprite(centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
 
     // Physics
     this.leftPaddle.setStatic(true);
     this.leftPaddle.setFriction(0, 0, 0);
     this.leftPaddle.setBounce(0.2);
-    // this.leftPaddle.setAngularVelocity(0.3);
 
     this.rightPaddle.setStatic(true);
     this.rightPaddle.setFriction(0, 0, 0);
     this.rightPaddle.setBounce(0.2);
 
+    this.baseCatcher.setFriction(5, 5, 5);
+    this.baseCatcher.setBounce(0.2);
+
+    // this.pinball.setDensity(5.5);
+    this.pinball.setFriction(0, 0, 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    this.pinball.setVelocity(1, 5);
+    this.pinball.setBounce(0.1);
+    this.pinball.setScale(0.9);
+    
+    // Set Static Sprites
     this.baseCatcher.setStatic(true);
     this.launchGuard.setStatic(true);
     this.cycGuard.setStatic(true);
     this.launcher.setStatic(true);
-
-    // this.pinball.setDensity(5.5);
-    this.pinball.setFriction(0, 0, 0);
-    this.pinball.setVelocity(1, 5);
-    this.pinball.setBounce(0.1);
-    this.pinball.setScale(0.45);
+    this.captinAmericaBumper.setStatic(true);
 
     // Depth Sorting
     this.launchGuard.setDepth(4);
     this.baseCatcher.setDepth(5);
-    
+
+    // Collisions
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => console.log("Pinball / Captin America Bumper Collision") });
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.baseCatcher, callback: () => console.log("Pinball / Base Catcher Collison") });
+  }
+
+  createUI() {
+
+  }
+
+  createUIBar() {
+
   }
 
   movePaddles(paddle) {
@@ -110,7 +126,7 @@ class Game extends Phaser.Scene {
       yoyo: false,
       delay: 0,
       onComplete: () => {
-        launcher.setVelocity(2, -12);
+        launcher.setVelocity(2, -9.3);
         launcher.setBounce(1);
         this.tweens.add({ targets: launcher, y: 595, duration: 50, ease: 'Power2'});
       }
