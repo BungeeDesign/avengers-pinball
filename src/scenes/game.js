@@ -1,9 +1,26 @@
+// Utils
+import Text from '../utils/Text';
 class Game extends Phaser.Scene {
   constructor() {
     super({ key: 'Game' });
   }
 
+  init() {
+    this.scoreText = 0;
+    this.depth = {
+      ui: 999,
+      sprite: 8
+    }
+  }
+  
   create() {
+    // Create the UI
+    this.createUI();
+
+    // Globals
+    this.bumperPoint = 0;
+
+
     let shapes = this.cache.json.get('shapes');
 
     const centerX = this.sys.game.config.width / 2;
@@ -25,21 +42,19 @@ class Game extends Phaser.Scene {
       the physics bodies would be offset.
     */
 
-    this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle });
-    this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle });
-    this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher });
-    this.launchGuard = this.matter.add.sprite(centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard });
-    this.cycGuard = this.matter.add.sprite(centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard });
-    this.launcher = this.matter.add.sprite(centerX + 213, 595, 'launcher', null, { shape: shapes.launcher });
-    this.captinAmericaBumper = this.matter.add.sprite(centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper });
+    this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle }).setStatic(true);
+    this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle }).setStatic(true);
+    this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher }).setStatic(true);
+    this.launchGuard = this.matter.add.sprite(centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard }).setStatic(true);
+    this.cycGuard = this.matter.add.sprite(centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard }).setStatic(true);
+    this.launcher = this.matter.add.sprite(centerX + 213, 595, 'launcher', null, { shape: shapes.launcher }).setStatic(true);
+    this.captinAmericaBumper = this.matter.add.sprite(centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper }).setStatic(true);
     this.pinball = this.matter.add.sprite(centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
 
     // Physics
-    this.leftPaddle.setStatic(true);
     this.leftPaddle.setFriction(0, 0, 0);
     this.leftPaddle.setBounce(0.2);
 
-    this.rightPaddle.setStatic(true);
     this.rightPaddle.setFriction(0, 0, 0);
     this.rightPaddle.setBounce(0.2);
 
@@ -52,28 +67,35 @@ class Game extends Phaser.Scene {
     this.pinball.setBounce(0.1);
     this.pinball.setScale(0.9);
     
-    // Set Static Sprites
-    this.baseCatcher.setStatic(true);
-    this.launchGuard.setStatic(true);
-    this.cycGuard.setStatic(true);
-    this.launcher.setStatic(true);
-    this.captinAmericaBumper.setStatic(true);
-
     // Depth Sorting
     this.launchGuard.setDepth(4);
     this.baseCatcher.setDepth(5);
 
     // Collisions
-    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => console.log("Pinball / Captin America Bumper Collision") });
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => this.setPoint() });
     this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.baseCatcher, callback: () => console.log("Pinball / Base Catcher Collison") });
   }
 
   createUI() {
-
+    this.pointBar = this.createUIBar(25, 735, 150, 50);
+    this.scoreText = new Text(this, 30, 735, 'Score: ', 'score', 0.5);
+    this.scoreText.setDepth(this.depth.ui);
   }
 
-  createUIBar() {
+  createUIBar(x, y, w, h) {
+    const bar = this.add.graphics({ x: x, y: y });
+    bar.fillStyle('0x0072C0', 1);
+    bar.fillRect(0, 0, w, h);
+    bar.setDepth(this.depth.ui);
+    bar.setScrollFactor(0);
+  }
 
+  updateUI() {
+    this.scoreText.setText(`Points: ${this.bumperPoint}`);
+  }
+
+  setPoint() {
+    this.bumperPoint++;
   }
 
   movePaddles(paddle) {
@@ -152,6 +174,8 @@ class Game extends Phaser.Scene {
     if (keys.down.isDown) {
       this.moveLauncher(this.launcher);
     }
+
+    this.updateUI();
   }
 }
 
