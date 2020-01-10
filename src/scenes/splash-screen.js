@@ -22,6 +22,7 @@ class SplashScreen extends Phaser.Scene {
     this.load.setBaseURL('src/assets/img');
     this.load.image('board', 'board-base.png');
     this.load.image('pinball', 'pinball.png');
+    this.load.image('pinballHole', 'pinball-hole.png');
     this.load.image('leftPaddle', 'left-paddle.png');
     this.load.image('rightPaddle', 'right-paddle.png');
     this.load.image('baseCatcher', 'base-catcher.png');

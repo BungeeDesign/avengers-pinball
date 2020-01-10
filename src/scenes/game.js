@@ -6,7 +6,11 @@ class Game extends Phaser.Scene {
   }
 
   init() {
+    this.bumperPoint = 0;
+    this.healthPoint = 3;
     this.scoreText = 0;
+    this.healthText = 0;
+    this.pinballHoleCollisions = 0;
     this.depth = {
       ui: 999,
       sprite: 8
@@ -18,38 +22,42 @@ class Game extends Phaser.Scene {
     this.createUI();
 
     // Globals
-    this.bumperPoint = 0;
+    // this.bumperPoint = 0;
+    // this.healthPoint = 3;
 
 
     let shapes = this.cache.json.get('shapes');
 
-    const centerX = this.sys.game.config.width / 2;
-    const centerY = this.sys.game.config.height / 2;
+    this.centerX = this.sys.game.config.width / 2;
+    this.centerY = this.sys.game.config.height / 2;
 
-    let board = this.add.sprite(centerX, centerY, 'board');
+    let board = this.add.sprite(this.centerX, this.centerY, 'board');
 
     let guard = '0 0 0 600 20 600 20 0';
-    let sideGuard = this.add.polygon(centerX - 236, 400, guard, 0xED1C24, 1);
+    let sideGuard = this.add.polygon(this.centerX - 236, 400, guard, 0xED1C24, 1);
     sideGuard.setAlpha(0);
     this.matter.add.gameObject(sideGuard, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: 0.03 });
 
-    let sideGuardLeft = this.add.polygon(centerX + 230, 400, guard, 0xED1C24, 1);
+    let sideGuardLeft = this.add.polygon(this.centerX + 230, 400, guard, 0xED1C24, 1);
     sideGuardLeft.setAlpha(0);
     this.matter.add.gameObject(sideGuardLeft, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: -0.03 });
 
+    // let hole = this.add.circle(this.centerX, 750, 35, '0x000000');
+
     /*
-      Center the paddles via an offset value from the centerX value. A container could of been used but as the container has children
+      Center the paddles via an offset value from the this.centerX value. A container could of been used but as the container has children
       the physics bodies would be offset.
     */
 
-    this.leftPaddle = this.matter.add.sprite(centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle }).setStatic(true);
-    this.rightPaddle = this.matter.add.sprite(centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle }).setStatic(true);
-    this.baseCatcher = this.matter.add.sprite(centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher }).setStatic(true);
-    this.launchGuard = this.matter.add.sprite(centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard }).setStatic(true);
-    this.cycGuard = this.matter.add.sprite(centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard }).setStatic(true);
-    this.launcher = this.matter.add.sprite(centerX + 213, 595, 'launcher', null, { shape: shapes.launcher }).setStatic(true);
-    this.captinAmericaBumper = this.matter.add.sprite(centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper }).setStatic(true);
-    this.pinball = this.matter.add.sprite(centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
+    this.leftPaddle = this.matter.add.sprite(this.centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle }).setStatic(true);
+    this.rightPaddle = this.matter.add.sprite(this.centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle }).setStatic(true);
+    this.baseCatcher = this.matter.add.sprite(this.centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher }).setStatic(true);
+    this.launchGuard = this.matter.add.sprite(this.centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard }).setStatic(true);
+    this.cycGuard = this.matter.add.sprite(this.centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard }).setStatic(true);
+    this.launcher = this.matter.add.sprite(this.centerX + 213, 595, 'launcher', null, { shape: shapes.launcher }).setStatic(true);
+    this.captinAmericaBumper = this.matter.add.sprite(this.centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper }).setStatic(true);
+    this.pinball = this.matter.add.sprite(this.centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
+    this.pinballHole = this.matter.add.sprite(this.centerX, 775, 'pinballHole', null, { shape: shapes.pinballHole }).setStatic(true).setAlpha(1);
 
     // Physics
     this.leftPaddle.setFriction(0, 0, 0);
@@ -62,24 +70,37 @@ class Game extends Phaser.Scene {
     this.baseCatcher.setBounce(0.2);
 
     // this.pinball.setDensity(5.5);
-    this.pinball.setFriction(0, 0, 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    this.pinball.setFriction(0, 0, 7);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     this.pinball.setVelocity(1, 5);
     this.pinball.setBounce(0.1);
-    this.pinball.setScale(0.9);
+    this.pinball.setScale(1);
+
+    this.pinballHole.setScale(0.8);
     
     // Depth Sorting
+    this.pinball.setDepth(2);
     this.launchGuard.setDepth(4);
     this.baseCatcher.setDepth(5);
+    this.pinballHole.setDepth(1);
 
     // Collisions
     this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => this.setPoint() });
-    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.baseCatcher, callback: () => console.log("Pinball / Base Catcher Collison") });
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.pinballHole, callback: () => {
+      this.pinballHoleCollisions++;
+      this.removeHealth(this.pinballHoleCollisions);
+    }});
   }
 
   createUI() {
-    this.pointBar = this.createUIBar(25, 735, 150, 50);
+    // Score Bar
+    this.scoreBar = this.createUIBar(25, 735, 150, 50);
     this.scoreText = new Text(this, 30, 735, 'Score: ', 'score', 0.5);
     this.scoreText.setDepth(this.depth.ui);
+
+    // Health Bar
+    this.healthBar = this.createUIBar(325, 735, 150, 50);
+    this.healthText = new Text(this, 330, 735, 'Health: ', 'score', 0.5);
+    this.healthText.setDepth(this.depth.ui);
   }
 
   createUIBar(x, y, w, h) {
@@ -92,10 +113,52 @@ class Game extends Phaser.Scene {
 
   updateUI() {
     this.scoreText.setText(`Points: ${this.bumperPoint}`);
+
+    const emojis = [];
+    for (let i = 0; i < this.healthPoint; i++) {
+      emojis.push('❤');
+    }
+    let healthHearts = emojis.join().replace(/\,/g, ' ');
+    this.healthText.setText(`Health: ${healthHearts}`);
   }
 
   setPoint() {
     this.bumperPoint++;
+  }
+
+  removeHealth(collisions) {
+    console.log(collisions);
+
+    if (collisions === 1) {
+      this.healthPoint--;
+      this.respawnPinball();
+    }
+  }
+
+  respawnPinball() {
+    setTimeout(() => {
+      console.log('Pinball Respawned');
+      this.pinballHoleCollisions = 0;
+
+      this.pinball.setVelocity(0, 0);
+      this.pinball.setBounce(0);
+      this.launcher.setVelocity(0, 0);
+      this.launcher.setBounce(0);
+
+      this.tweens.add({
+        targets: this.pinball,
+        setScale: 0,
+        duration: 50,
+        ease: 'Power2',
+        yoyo: false,
+        delay: 0,
+        onComplete: () => {
+          this.tweens.add({ targets: this.pinball, setScale: 0.9, duration: 4550, ease: 'Power2'});
+        }
+      });
+
+      this.pinball.setPosition(this.centerX + 213, 400);
+    }, 1000);
   }
 
   movePaddles(paddle) {
