@@ -20,6 +20,8 @@ class SplashScreen extends Phaser.Scene {
     // Show the loader.
     this.showLoader();    
     this.load.setBaseURL('src/assets/img');
+    this.load.image('menuBg', 'menu-bg.png');
+    this.load.image('gameOverBg', 'game-over-bg.png');
     this.load.image('board', 'board-base.png');
     this.load.image('pinball', 'pinball.png');
     this.load.image('pinballHole', 'pinball-hole.png');
@@ -36,7 +38,7 @@ class SplashScreen extends Phaser.Scene {
   }
 
   create() {
-    this.scene.start('Game');
+    this.scene.start('Menu');
   }
 
   showLoader() {

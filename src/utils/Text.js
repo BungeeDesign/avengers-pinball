@@ -5,44 +5,47 @@ export default class Text {
     this.y = y;
     this.text = string;
     this.style = this.setStyle(style);
-    this.origin = this.initOrigin(origin);
+    // this.origin = this.initOrigin(origin);
     this.obj = this.createText();
   }
 
   setStyle(styleType) {
     // Base Style
     let style = {
-      font: `20px Arial`,
+      font: `20px Gothic`,
       fill: "white"
     };
     
     switch (styleType.toLowerCase()) {
       case "loading":
-        style.font = `20px Arial`;
+        style.font = `20px Gothic`;
         break;
       case "score":
-        style.font = `20px Arial`;
+        style.font = `20px Gothic`;
+        break;
+      case "title":
+        style.font = `35px Gothic`;
         break;
     }
 
     return style;
   }
 
-  initOrigin(origin) {
-    if (typeof origin === "number") {
-      return {
-        x: origin,
-        y: origin
-      };
-    } else if (typeof origin === "object") {
-      return origin;
-    } else {
-      return {
-        x: 0.5,
-        y: 0.5
-      };
-    }
-  }
+  // initOrigin(origin) {
+  //   if (typeof origin === "number") {
+  //     return {
+  //       x: origin,
+  //       y: origin
+  //     };
+  //   } else if (typeof origin === "object") {
+  //     return origin;
+  //   } else {
+  //     return {
+  //       x: 0.5,
+  //       y: 0.5
+  //     };
+  //   }
+  // }
 
   createText() {
     let obj = this.context.add.text(

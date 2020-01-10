@@ -1,6 +1,8 @@
 import Phaser from "phaser";
 import SplashScreen from './scenes/splash-screen';
+import Menu from './scenes/menu';
 import Game from './scenes/game';
+import GameOver from './scenes/game-over';
 import PhaserMatterCollisionPlugin from "phaser-matter-collision-plugin";
 
 const DEFAULT_WIDTH = 500;
@@ -13,7 +15,7 @@ const config = {
   parent: "container",
   width: DEFAULT_WIDTH,
   height: DEFAULT_HEIGHT,
-  scene: [SplashScreen, Game],
+  scene: [SplashScreen, Menu, Game, GameOver],
   physics: {
     default: 'matter',
     matter: {

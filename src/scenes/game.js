@@ -6,6 +6,7 @@ class Game extends Phaser.Scene {
   }
 
   init() {
+    this.sys.canvas.style.cursor = "none";
     this.bumperPoint = 0;
     this.healthPoint = 3;
     this.scoreText = 0;
@@ -20,11 +21,6 @@ class Game extends Phaser.Scene {
   create() {
     // Create the UI
     this.createUI();
-
-    // Globals
-    // this.bumperPoint = 0;
-    // this.healthPoint = 3;
-
 
     let shapes = this.cache.json.get('shapes');
 
@@ -42,8 +38,6 @@ class Game extends Phaser.Scene {
     sideGuardLeft.setAlpha(0);
     this.matter.add.gameObject(sideGuardLeft, { shape: { type: 'fromVerts', verts: guard, flagInternal: true }, isStatic: true, angle: -0.03 });
 
-    // let hole = this.add.circle(this.centerX, 750, 35, '0x000000');
-
     /*
       Center the paddles via an offset value from the this.centerX value. A container could of been used but as the container has children
       the physics bodies would be offset.
@@ -54,7 +48,7 @@ class Game extends Phaser.Scene {
     this.baseCatcher = this.matter.add.sprite(this.centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher }).setStatic(true);
     this.launchGuard = this.matter.add.sprite(this.centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard }).setStatic(true);
     this.cycGuard = this.matter.add.sprite(this.centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard }).setStatic(true);
-    this.launcher = this.matter.add.sprite(this.centerX + 213, 595, 'launcher', null, { shape: shapes.launcher }).setStatic(true);
+    this.launcher = this.matter.add.sprite(this.centerX + 213, 615, 'launcher', null, { shape: shapes.launcher }).setStatic(true);
     this.captinAmericaBumper = this.matter.add.sprite(this.centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper }).setStatic(true);
     this.pinball = this.matter.add.sprite(this.centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
     this.pinballHole = this.matter.add.sprite(this.centerX, 775, 'pinballHole', null, { shape: shapes.pinballHole }).setStatic(true).setAlpha(1);
@@ -93,13 +87,13 @@ class Game extends Phaser.Scene {
 
   createUI() {
     // Score Bar
-    this.scoreBar = this.createUIBar(25, 735, 150, 50);
-    this.scoreText = new Text(this, 30, 735, 'Score: ', 'score', 0.5);
+    this.scoreBar = this.createUIBar(25, 735, 150, 25);
+    this.scoreText = new Text(this, 30, 735, 'Score ', 'score', 0.5);
     this.scoreText.setDepth(this.depth.ui);
 
     // Health Bar
-    this.healthBar = this.createUIBar(325, 735, 150, 50);
-    this.healthText = new Text(this, 330, 735, 'Health: ', 'score', 0.5);
+    this.healthBar = this.createUIBar(325, 735, 155, 25);
+    this.healthText = new Text(this, 330, 735, 'Health ', 'score', 0.5);
     this.healthText.setDepth(this.depth.ui);
   }
 
@@ -112,14 +106,14 @@ class Game extends Phaser.Scene {
   }
 
   updateUI() {
-    this.scoreText.setText(`Points: ${this.bumperPoint}`);
+    this.scoreText.setText(`Score ${this.bumperPoint}`);
 
     const emojis = [];
     for (let i = 0; i < this.healthPoint; i++) {
       emojis.push('❤');
     }
     let healthHearts = emojis.join().replace(/\,/g, ' ');
-    this.healthText.setText(`Health: ${healthHearts}`);
+    this.healthText.setText(`Health ${healthHearts}`);
   }
 
   setPoint() {
@@ -145,19 +139,17 @@ class Game extends Phaser.Scene {
       this.launcher.setVelocity(0, 0);
       this.launcher.setBounce(0);
 
+      this.pinball.scale = 0;
       this.tweens.add({
         targets: this.pinball,
-        setScale: 0,
-        duration: 50,
+        scale: 1,
+        duration: 2000,
         ease: 'Power2',
         yoyo: false,
-        delay: 0,
-        onComplete: () => {
-          this.tweens.add({ targets: this.pinball, setScale: 0.9, duration: 4550, ease: 'Power2'});
-        }
+        delay: 0
       });
 
-      this.pinball.setPosition(this.centerX + 213, 400);
+      this.pinball.setPosition(this.centerX + 213, 525);
     }, 1000);
   }
 
@@ -205,7 +197,7 @@ class Game extends Phaser.Scene {
   moveLauncher(launcher) {
     this.tweens.add({
       targets: launcher,
-      y: 620,
+      y: 630,
       duration: 50,
       ease: 'Power2',
       yoyo: false,
@@ -213,7 +205,7 @@ class Game extends Phaser.Scene {
       onComplete: () => {
         launcher.setVelocity(2, -9.3);
         launcher.setBounce(1);
-        this.tweens.add({ targets: launcher, y: 595, duration: 50, ease: 'Power2'});
+        this.tweens.add({ targets: launcher, y: 615, duration: 50, ease: 'Power2'});
       }
     });
   }
@@ -239,6 +231,11 @@ class Game extends Phaser.Scene {
     }
 
     this.updateUI();
+
+    // Check Score
+    if (this.healthPoint === 0) {
+      this.scene.start('GameOver', { score: this.bumperPoint });
+    }
   }
 }
 
