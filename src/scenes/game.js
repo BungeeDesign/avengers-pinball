@@ -5,7 +5,8 @@ class Game extends Phaser.Scene {
     super({ key: 'Game' });
   }
 
-  init() {
+  init(data) {
+    this.backgroundMusic = data.backgroundMusic;
     this.sys.canvas.style.cursor = "none";
     this.bumperPoint = 0;
     this.healthPoint = 3;
@@ -27,7 +28,7 @@ class Game extends Phaser.Scene {
     this.centerX = this.sys.game.config.width / 2;
     this.centerY = this.sys.game.config.height / 2;
 
-    let board = this.add.sprite(this.centerX, this.centerY, 'board');
+    let board = this.add.sprite(this.centerX, this.centerY - 35, 'board');
 
     let guard = '0 0 0 600 20 600 20 0';
     let sideGuard = this.add.polygon(this.centerX - 236, 400, guard, 0xED1C24, 1);
@@ -45,6 +46,8 @@ class Game extends Phaser.Scene {
 
     this.leftPaddle = this.matter.add.sprite(this.centerX - 57, 650, 'leftPaddle', null, { shape: shapes.leftPaddle }).setStatic(true);
     this.rightPaddle = this.matter.add.sprite(this.centerX + 57, 650, 'rightPaddle', null, { shape: shapes.rightPaddle }).setStatic(true);
+    this.outsideGuardLeft = this.matter.add.sprite(this.centerX - 130, 602, 'outsideGuardLeft', null, { shape: shapes.outsideGuardLeft }).setStatic(true);
+    this.outsideGuardRight = this.matter.add.sprite(this.centerX + 130, 602, 'outsideGuardRight', null, { shape: shapes.outsideGuardRight }).setStatic(true);
     this.baseCatcher = this.matter.add.sprite(this.centerX, 740, 'baseCatcher', null, { shape: shapes.baseCatcher }).setStatic(true);
     this.launchGuard = this.matter.add.sprite(this.centerX + 186, 397, 'launchGuard', null, { shape: shapes.launchGuard }).setStatic(true);
     this.cycGuard = this.matter.add.sprite(this.centerX, 17, 'cycGuard', null, { shape: shapes.cycGuard }).setStatic(true);
@@ -52,6 +55,14 @@ class Game extends Phaser.Scene {
     this.captinAmericaBumper = this.matter.add.sprite(this.centerX, 400, 'captinAmericaBumper', null, { shape: shapes.captinAmericaBumper }).setStatic(true);
     this.pinball = this.matter.add.sprite(this.centerX + 213, 525, 'pinball', null, { shape: shapes.pinball });
     this.pinballHole = this.matter.add.sprite(this.centerX, 775, 'pinballHole', null, { shape: shapes.pinballHole }).setStatic(true).setAlpha(1);
+    this.slingshotLeft = this.matter.add.sprite(this.centerX - 130, 500, 'slingshotLeft', null, { shape: shapes.slingshotLeft }).setStatic(true);
+    this.slingshotLeftLight = this.matter.add.sprite(this.centerX - 130, 500, 'slingshotLeftLight', null, { shape: shapes.slingshotLeft }).setStatic(true).setAlpha(0);
+    this.slingshotRight = this.matter.add.sprite(this.centerX + 130, 500, 'slingshotRight', null, { shape: shapes.slingshotRight }).setStatic(true);
+    this.slingshotRightLight = this.matter.add.sprite(this.centerX + 130, 500, 'slingshotRightLight', null, { shape: shapes.slingshotRight }).setStatic(true).setAlpha(0);
+    this.topSideGuard = this.matter.add.sprite(this.centerX - 177, 225, 'topSideGuard', null, { shape: shapes.topSideGuard }).setStatic(true);
+
+    // Sprite Sheets
+    this.sparkHit = this.add.sprite(this.centerX, 400, 'sparkHit', 'Spark_00000.png').setAlpha(0);
 
     // Physics
     this.leftPaddle.setFriction(0, 0, 0);
@@ -63,13 +74,15 @@ class Game extends Phaser.Scene {
     this.baseCatcher.setFriction(5, 5, 5);
     this.baseCatcher.setBounce(0.2);
 
-    // this.pinball.setDensity(5.5);
     this.pinball.setFriction(0, 0, 7);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-    this.pinball.setVelocity(1, 5);
+    this.pinball.setVelocity(1, 3); //5
     this.pinball.setBounce(0.1);
     this.pinball.setScale(1);
 
-    this.pinballHole.setScale(0.8);
+    this.slingshotLeft.setBounce(1);
+    this.slingshotLeft.setFriction(0, 0, 0);
+    this.slingshotRight.setBounce(1);
+    this.slingshotRight.setFriction(0, 0, 0);
     
     // Depth Sorting
     this.pinball.setDepth(2);
@@ -77,12 +90,36 @@ class Game extends Phaser.Scene {
     this.baseCatcher.setDepth(5);
     this.pinballHole.setDepth(1);
 
+    this.pinballHole.setScale(0.8);
+
+    // Add Game Sound
+    this.pinballRolling = this.sound.add('pinballRolling');
+    this.pullLauncher = this.sound.add('pullLauncher');
+    this.pinballFall = this.sound.add('pinballFall');
+    this.paddleFlip = this.sound.add('paddleFlip');
+    this.slingshot = this.sound.add('slingshot', { volume: 0.3 });
+    this.captinAmericaBumperHit = this.sound.add('captinAmericaBumperHit', { volume: 0.8 });
+
     // Collisions
-    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => this.setPoint() });
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.captinAmericaBumper, callback: () => {
+      this.setPoint();
+      this.captinAmericaBumperHit.play();
+      this.sparkParticles.emitParticleAt(this.pinball.x, this.pinball.y, 50);
+    }});
     this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.pinballHole, callback: () => {
       this.pinballHoleCollisions++;
       this.removeHealth(this.pinballHoleCollisions);
     }});
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.slingshotLeft, callback: () => {
+      this.slingshot.play();
+      this.boardLights('slingshotLeft') 
+    }});
+    this.matterCollision.addOnCollideStart({ objectA: this.pinball, objectB: this.slingshotRight, callback: () => {
+      this.slingshot.play();
+      this.boardLights('slingshotRight') 
+    }});
+
+    this.createParticles();
   }
 
   createUI() {
@@ -124,6 +161,7 @@ class Game extends Phaser.Scene {
     console.log(collisions);
 
     if (collisions === 1) {
+      this.pinballFall.play();
       this.healthPoint--;
       this.respawnPinball();
     }
@@ -155,6 +193,8 @@ class Game extends Phaser.Scene {
 
   movePaddles(paddle) {
     if (paddle.texture.key === 'leftPaddle') {
+      this.paddleFlip.play();
+
       // Velocity Increace
       paddle.setVelocity(2, -12);
       paddle.setBounce(1);
@@ -174,6 +214,8 @@ class Game extends Phaser.Scene {
       });
 
     } else {
+      this.paddleFlip.play();
+
       paddle.setVelocity(2, -12);
       paddle.setBounce(1);
 
@@ -195,6 +237,7 @@ class Game extends Phaser.Scene {
   }
 
   moveLauncher(launcher) {
+    this.pullLauncher.play();
     this.tweens.add({
       targets: launcher,
       y: 630,
@@ -207,6 +250,68 @@ class Game extends Phaser.Scene {
         launcher.setBounce(1);
         this.tweens.add({ targets: launcher, y: 615, duration: 50, ease: 'Power2'});
       }
+    });
+  }
+
+  // Lighting Effect Animations
+  boardLights(boardObj) {
+    switch(boardObj) {
+      case 'slingshotLeft':
+        this.tweens.add({
+          targets: this.slingshotLeftLight,
+          alpha: 1,
+          duration: 150,
+          ease: 'Linear',
+          yoyo: true,
+          delay: 0,
+          loop: 3,
+          onComplete: () => {
+            this.slingshotLeftLight.setAlpha(0);
+          }
+        });
+        break;
+      case 'slingshotRight':
+        this.tweens.add({
+          targets: this.slingshotRightLight,
+          alpha: 1,
+          duration: 150,
+          ease: 'Linear',
+          yoyo: true,
+          delay: 0,
+          loop: 3,
+          onComplete: () => {
+            this.slingshotRightLight.setAlpha(0);
+          }
+        });
+        break;
+    }
+  }
+
+  createSpriteAnimations(animation) {
+    switch (animation) {
+      case 'pinballFlood':
+        const sparkFrames = this.anims.generateFrameNames('sparkHit', { 
+          start: 1, end: 84, zeroPad: 5,
+          prefix: 'Spark_' , suffix: '.png'
+        });
+    
+        this.anims.create({ key: 'sparkHit', frames: sparkFrames, frameRate: 60, repeat: -1 });
+        this.sparkHit.play('sparkHit');
+        break;
+    }
+  }
+
+  createParticles() {
+    this.sparkParticles = this.add.particles('sparkHit');
+    this.sparkEmitter = this.sparkParticles.createEmitter({
+      x: this.centerX,
+      y: 500,
+      speed: 15,
+      lifespan: 1400,
+      blendMode: 'ADD',
+      maxParticles: 400,
+      scale: { start: 0.3, end: 0 },
+      on: false
     });
   }
 
@@ -234,7 +339,12 @@ class Game extends Phaser.Scene {
 
     // Check Score
     if (this.healthPoint === 0) {
-      this.scene.start('GameOver', { score: this.bumperPoint });
+      this.scene.start('GameOver', { score: this.bumperPoint, backgroundMusic: this.backgroundMusic });
+    }
+
+    // console.log(this.pinball.body.velocity);
+    if (this.pinball.body.velocity.x < -3 && this.pinball.body.velocity.x > -5 ) {
+      this.pinballRolling.play();
     }
   }
 }

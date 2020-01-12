@@ -10,6 +10,7 @@ class GameOver extends Phaser.Scene {
 
   init(data) {
     this.score = data.score;
+    this.backgroundMusic = data.backgroundMusic;
   }
 
   create() {
@@ -23,6 +24,7 @@ class GameOver extends Phaser.Scene {
     this.sys.canvas.style.cursor = "default";
 
     setTimeout(() => {
+      this.backgroundMusic.stop();
       this.scene.start('Menu');
     }, 2600);
   }

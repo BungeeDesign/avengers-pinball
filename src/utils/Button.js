@@ -72,8 +72,12 @@ export default class Text {
       backgroundContainer.setFillStyle('0x0072C0', 1);
     });
 
-    obj.on('pointerdown', () => { 
-      this.context.scene.start(this.action);
+    obj.on('pointerdown', () => {
+      if (typeof this.action === 'object') {
+        this.context.scene.start(this.action.scene, this.action.data);
+      } else {
+        this.context.scene.start(this.action);
+      }
     });
 
     return obj;
