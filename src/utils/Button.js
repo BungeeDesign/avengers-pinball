@@ -1,8 +1,11 @@
-export default class Text {
-  constructor(context, x, y, string, action, origin) {
+class Button {
+  constructor(context, x, y, horizontalPadding, verticalPadding, fontSize, string, action, origin) {
     this.context = context;
     this.x = x;
     this.y = y;
+    this.horizontalPadding = horizontalPadding;
+    this.verticalPadding = verticalPadding;
+    this.fontSize = fontSize;
     this.text = string;
     this.action = action;
     this.origin = this.initOrigin(origin);
@@ -49,19 +52,18 @@ export default class Text {
     backgroundContainer.setFillStyle('0x0072C0', 1);
 
     let obj = this.context.add.text(
-      this.x - 26,
-      this.y - 15,
+      this.x - this.horizontalPadding,
+      this.y - this.verticalPadding,
       this.text,
       {
-        font: `25px Gothic`,
+        font: `${this.fontSize}px Gothic`,
         fill: "white",
         align: 'center'
       }
     );
 
-    // obj.setOrigin(0.5);
-
     obj.setInteractive();
+
     obj.on('pointerover', () => { 
       this.context.sys.canvas.style.cursor = "pointer";
       backgroundContainer.setFillStyle('0xD12600', 1);
@@ -72,14 +74,29 @@ export default class Text {
       backgroundContainer.setFillStyle('0x0072C0', 1);
     });
 
+    let musicOn = true;
     obj.on('pointerdown', () => {
       if (typeof this.action === 'object') {
         this.context.scene.start(this.action.scene, this.action.data);
       } else {
-        this.context.scene.start(this.action);
+        if (this.action === 'Music') {
+          if (musicOn) {
+            this.context.backgroundMusic.stop();
+            obj.setText('MUSIC: OFF');
+            musicOn = false;
+          } else {
+            this.context.backgroundMusic.play();
+            obj.setText('MUSIC: ON');
+            musicOn = true;
+          }
+        } else {
+          this.context.scene.start(this.action);
+        }
       }
     });
 
     return obj;
   }
 }
+
+export default Button;

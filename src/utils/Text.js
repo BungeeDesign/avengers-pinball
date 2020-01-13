@@ -1,11 +1,10 @@
-export default class Text {
-  constructor(context, x, y, string, style, origin) {
+class Text {
+  constructor(context, x, y, string, style) {
     this.context = context;
     this.x = x;
     this.y = y;
     this.text = string;
     this.style = this.setStyle(style);
-    // this.origin = this.initOrigin(origin);
     this.obj = this.createText();
   }
 
@@ -13,7 +12,7 @@ export default class Text {
     // Base Style
     let style = {
       font: `20px Gothic`,
-      fill: "white"
+      color: "#fff"
     };
     
     switch (styleType.toLowerCase()) {
@@ -31,22 +30,6 @@ export default class Text {
     return style;
   }
 
-  // initOrigin(origin) {
-  //   if (typeof origin === "number") {
-  //     return {
-  //       x: origin,
-  //       y: origin
-  //     };
-  //   } else if (typeof origin === "object") {
-  //     return origin;
-  //   } else {
-  //     return {
-  //       x: 0.5,
-  //       y: 0.5
-  //     };
-  //   }
-  // }
-
   createText() {
     let obj = this.context.add.text(
       this.x,
@@ -55,7 +38,6 @@ export default class Text {
       this.style
     );
 
-    // obj.setOrigin(this.origin.x, this.origin.y);
     return obj;
   }
 
@@ -94,3 +76,5 @@ export default class Text {
     this.obj.setScrollFactor(scrollX, scrollY);
   }
 }
+
+export default Text;

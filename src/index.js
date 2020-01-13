@@ -8,6 +8,7 @@ import PhaserMatterCollisionPlugin from "phaser-matter-collision-plugin";
 const DEFAULT_WIDTH = 500;
 const DEFAULT_HEIGHT = 800;
 
+// Phaser 3 Config with matter physics and the Matter collision plugin
 const config = {
   type: Phaser.AUTO,
   backgroundColor: '#000',
@@ -36,6 +37,5 @@ const config = {
 window.addEventListener('load', () => {
   let game = new Phaser.Game(config);
 });
-
 
 

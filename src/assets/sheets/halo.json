@@ -1,0 +1,3612 @@
+{
+	"textures": [
+		{
+			"image": "halo-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1995,
+				"h": 2016
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Halo_00031.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00032.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00033.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00034.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00035.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00036.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 1261,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00037.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 1513,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00038.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1,
+						"y": 1765,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00039.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00040.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00041.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00042.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00043.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00044.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 1261,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00045.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 1513,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00046.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 253,
+						"y": 1765,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00047.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00048.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00049.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00050.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00051.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00052.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 1261,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00053.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 1513,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00054.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 505,
+						"y": 1765,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00055.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00056.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00057.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00058.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00059.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00060.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 1261,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00061.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 1513,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00062.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 757,
+						"y": 1765,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00063.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00064.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00065.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00066.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00067.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00068.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1261,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00069.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1513,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00070.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1765,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00071.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 1,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00072.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 253,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00073.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 505,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00074.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 757,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00075.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 1009,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00030.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 247,
+						"h": 250
+					},
+					"frame": {
+						"x": 1261,
+						"y": 1261,
+						"w": 247,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00063.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 241
+					},
+					"frame": {
+						"x": 1261,
+						"y": 1513,
+						"w": 244,
+						"h": 241
+					}
+				},
+				{
+					"filename": "Halo_00029.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 240,
+						"h": 250
+					},
+					"frame": {
+						"x": 1507,
+						"y": 1513,
+						"w": 240,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00084.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 237,
+						"h": 249
+					},
+					"frame": {
+						"x": 1261,
+						"y": 1756,
+						"w": 237,
+						"h": 249
+					}
+				},
+				{
+					"filename": "Spark_00065.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 243,
+						"h": 243
+					},
+					"frame": {
+						"x": 1510,
+						"y": 1261,
+						"w": 243,
+						"h": 243
+					}
+				},
+				{
+					"filename": "Spark_00064.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 243,
+						"h": 242
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1765,
+						"w": 243,
+						"h": 242
+					}
+				},
+				{
+					"filename": "Halo_00000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 3
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1756,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "Spark_00067.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 242,
+						"h": 245
+					},
+					"frame": {
+						"x": 1745,
+						"y": 1765,
+						"w": 242,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00080.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 249
+					},
+					"frame": {
+						"x": 1749,
+						"y": 1506,
+						"w": 235,
+						"h": 249
+					}
+				},
+				{
+					"filename": "Halo_00084.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 3
+					},
+					"frame": {
+						"x": 1510,
+						"y": 1506,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "Halo_00025.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 0,
+						"w": 234,
+						"h": 250
+					},
+					"frame": {
+						"x": 1513,
+						"y": 1,
+						"w": 234,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00028.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 0,
+						"w": 233,
+						"h": 250
+					},
+					"frame": {
+						"x": 1513,
+						"y": 253,
+						"w": 233,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00081.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 249
+					},
+					"frame": {
+						"x": 1513,
+						"y": 505,
+						"w": 235,
+						"h": 249
+					}
+				},
+				{
+					"filename": "Spark_00066.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 242,
+						"h": 244
+					},
+					"frame": {
+						"x": 1748,
+						"y": 253,
+						"w": 242,
+						"h": 244
+					}
+				},
+				{
+					"filename": "Spark_00068.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 241,
+						"h": 245
+					},
+					"frame": {
+						"x": 1749,
+						"y": 1,
+						"w": 241,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00082.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 249
+					},
+					"frame": {
+						"x": 1513,
+						"y": 756,
+						"w": 235,
+						"h": 249
+					}
+				},
+				{
+					"filename": "Spark_00069.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 240,
+						"h": 245
+					},
+					"frame": {
+						"x": 1513,
+						"y": 1007,
+						"w": 240,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00083.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 249
+					},
+					"frame": {
+						"x": 1750,
+						"y": 499,
+						"w": 235,
+						"h": 249
+					}
+				},
+				{
+					"filename": "Spark_00070.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 240,
+						"h": 245
+					},
+					"frame": {
+						"x": 1750,
+						"y": 750,
+						"w": 240,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00071.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 239,
+						"h": 245
+					},
+					"frame": {
+						"x": 1755,
+						"y": 997,
+						"w": 239,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00072.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 238,
+						"h": 245
+					},
+					"frame": {
+						"x": 1755,
+						"y": 1244,
+						"w": 238,
+						"h": 245
+					}
+				}
+			]
+		},
+		{
+			"image": "halo-1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2040,
+				"h": 2016
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Spark_00059.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 239
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 244,
+						"h": 239
+					}
+				},
+				{
+					"filename": "Spark_00060.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 239
+					},
+					"frame": {
+						"x": 1,
+						"y": 242,
+						"w": 244,
+						"h": 239
+					}
+				},
+				{
+					"filename": "Spark_00061.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 239
+					},
+					"frame": {
+						"x": 247,
+						"y": 1,
+						"w": 244,
+						"h": 239
+					}
+				},
+				{
+					"filename": "Spark_00062.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 239
+					},
+					"frame": {
+						"x": 1,
+						"y": 483,
+						"w": 244,
+						"h": 239
+					}
+				},
+				{
+					"filename": "Spark_00079.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 248
+					},
+					"frame": {
+						"x": 247,
+						"y": 242,
+						"w": 235,
+						"h": 248
+					}
+				},
+				{
+					"filename": "Spark_00078.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 234,
+						"h": 248
+					},
+					"frame": {
+						"x": 1,
+						"y": 724,
+						"w": 234,
+						"h": 248
+					}
+				},
+				{
+					"filename": "Spark_00058.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 243,
+						"h": 238
+					},
+					"frame": {
+						"x": 493,
+						"y": 1,
+						"w": 243,
+						"h": 238
+					}
+				},
+				{
+					"filename": "Spark_00077.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 234,
+						"h": 247
+					},
+					"frame": {
+						"x": 1,
+						"y": 974,
+						"w": 234,
+						"h": 247
+					}
+				},
+				{
+					"filename": "Spark_00076.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 235,
+						"h": 246
+					},
+					"frame": {
+						"x": 1,
+						"y": 1223,
+						"w": 235,
+						"h": 246
+					}
+				},
+				{
+					"filename": "Spark_00075.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 236,
+						"h": 245
+					},
+					"frame": {
+						"x": 1,
+						"y": 1471,
+						"w": 236,
+						"h": 245
+					}
+				},
+				{
+					"filename": "Spark_00073.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 237,
+						"h": 244
+					},
+					"frame": {
+						"x": 1,
+						"y": 1718,
+						"w": 237,
+						"h": 244
+					}
+				},
+				{
+					"filename": "Spark_00057.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 242,
+						"h": 238
+					},
+					"frame": {
+						"x": 738,
+						"y": 1,
+						"w": 242,
+						"h": 238
+					}
+				},
+				{
+					"filename": "Spark_00056.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 239,
+						"h": 238
+					},
+					"frame": {
+						"x": 982,
+						"y": 1,
+						"w": 239,
+						"h": 238
+					}
+				},
+				{
+					"filename": "Spark_00054.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 239,
+						"h": 237
+					},
+					"frame": {
+						"x": 1223,
+						"y": 1,
+						"w": 239,
+						"h": 237
+					}
+				},
+				{
+					"filename": "Spark_00055.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 239,
+						"h": 237
+					},
+					"frame": {
+						"x": 1464,
+						"y": 1,
+						"w": 239,
+						"h": 237
+					}
+				},
+				{
+					"filename": "Spark_00074.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 236,
+						"h": 244
+					},
+					"frame": {
+						"x": 1705,
+						"y": 1,
+						"w": 236,
+						"h": 244
+					}
+				},
+				{
+					"filename": "Spark_00053.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 3,
+						"w": 238,
+						"h": 234
+					},
+					"frame": {
+						"x": 247,
+						"y": 492,
+						"w": 238,
+						"h": 234
+					}
+				},
+				{
+					"filename": "Halo_00027.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 0,
+						"w": 224,
+						"h": 250
+					},
+					"frame": {
+						"x": 237,
+						"y": 728,
+						"w": 224,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 0,
+						"w": 230,
+						"h": 234
+					},
+					"frame": {
+						"x": 237,
+						"y": 980,
+						"w": 230,
+						"h": 234
+					}
+				},
+				{
+					"filename": "Halo_00076.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 0,
+						"w": 219,
+						"h": 250
+					},
+					"frame": {
+						"x": 238,
+						"y": 1216,
+						"w": 219,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00052.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 5,
+						"w": 238,
+						"h": 231
+					},
+					"frame": {
+						"x": 239,
+						"y": 1468,
+						"w": 238,
+						"h": 231
+					}
+				},
+				{
+					"filename": "Spark_00051.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 7,
+						"w": 238,
+						"h": 229
+					},
+					"frame": {
+						"x": 240,
+						"y": 1701,
+						"w": 238,
+						"h": 229
+					}
+				},
+				{
+					"filename": "Halo_00026.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 35,
+						"y": 0,
+						"w": 215,
+						"h": 250
+					},
+					"frame": {
+						"x": 463,
+						"y": 728,
+						"w": 215,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00078.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 0,
+						"w": 209,
+						"h": 240
+					},
+					"frame": {
+						"x": 469,
+						"y": 980,
+						"w": 209,
+						"h": 240
+					}
+				},
+				{
+					"filename": "Spark_00050.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 7,
+						"w": 236,
+						"h": 229
+					},
+					"frame": {
+						"x": 459,
+						"y": 1222,
+						"w": 236,
+						"h": 229
+					}
+				},
+				{
+					"filename": "Spark_00010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 12,
+						"w": 217,
+						"h": 229
+					},
+					"frame": {
+						"x": 479,
+						"y": 1453,
+						"w": 217,
+						"h": 229
+					}
+				},
+				{
+					"filename": "Halo_00077.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 0,
+						"w": 207,
+						"h": 250
+					},
+					"frame": {
+						"x": 480,
+						"y": 1684,
+						"w": 207,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 0,
+						"w": 194,
+						"h": 250
+					},
+					"frame": {
+						"x": 689,
+						"y": 1684,
+						"w": 194,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 19,
+						"w": 227,
+						"h": 229
+					},
+					"frame": {
+						"x": 484,
+						"y": 242,
+						"w": 227,
+						"h": 229
+					}
+				},
+				{
+					"filename": "Spark_00049.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 9,
+						"w": 235,
+						"h": 228
+					},
+					"frame": {
+						"x": 713,
+						"y": 241,
+						"w": 235,
+						"h": 228
+					}
+				},
+				{
+					"filename": "Spark_00048.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 10,
+						"w": 233,
+						"h": 227
+					},
+					"frame": {
+						"x": 950,
+						"y": 241,
+						"w": 233,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 19,
+						"w": 226,
+						"h": 229
+					},
+					"frame": {
+						"x": 487,
+						"y": 473,
+						"w": 226,
+						"h": 229
+					}
+				},
+				{
+					"filename": "Spark_00047.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 11,
+						"w": 233,
+						"h": 226
+					},
+					"frame": {
+						"x": 715,
+						"y": 471,
+						"w": 233,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00044.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 12,
+						"w": 234,
+						"h": 225
+					},
+					"frame": {
+						"x": 950,
+						"y": 470,
+						"w": 234,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Spark_00006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 228,
+						"h": 227
+					},
+					"frame": {
+						"x": 1185,
+						"y": 241,
+						"w": 228,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00046.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 11,
+						"w": 232,
+						"h": 226
+					},
+					"frame": {
+						"x": 1415,
+						"y": 240,
+						"w": 232,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00045.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 12,
+						"w": 232,
+						"h": 225
+					},
+					"frame": {
+						"x": 1186,
+						"y": 470,
+						"w": 232,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Spark_00007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 227,
+						"h": 227
+					},
+					"frame": {
+						"x": 1420,
+						"y": 468,
+						"w": 227,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00040.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 16,
+						"w": 234,
+						"h": 224
+					},
+					"frame": {
+						"x": 1649,
+						"y": 247,
+						"w": 234,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Spark_00041.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 15,
+						"w": 234,
+						"h": 224
+					},
+					"frame": {
+						"x": 1649,
+						"y": 473,
+						"w": 234,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Halo_00005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 71,
+						"y": 0,
+						"w": 154,
+						"h": 124
+					},
+					"frame": {
+						"x": 1885,
+						"y": 247,
+						"w": 154,
+						"h": 124
+					}
+				},
+				{
+					"filename": "Halo_00020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 185,
+						"h": 250
+					},
+					"frame": {
+						"x": 680,
+						"y": 704,
+						"w": 185,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 185,
+						"h": 250
+					},
+					"frame": {
+						"x": 680,
+						"y": 956,
+						"w": 185,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 225,
+						"h": 228
+					},
+					"frame": {
+						"x": 697,
+						"y": 1208,
+						"w": 225,
+						"h": 228
+					}
+				},
+				{
+					"filename": "Spark_00024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 227,
+						"h": 227
+					},
+					"frame": {
+						"x": 698,
+						"y": 1438,
+						"w": 227,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Halo_00022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 185,
+						"h": 250
+					},
+					"frame": {
+						"x": 867,
+						"y": 699,
+						"w": 185,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Spark_00042.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 15,
+						"w": 234,
+						"h": 224
+					},
+					"frame": {
+						"x": 1054,
+						"y": 697,
+						"w": 234,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Spark_00001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 235,
+						"h": 223
+					},
+					"frame": {
+						"x": 1290,
+						"y": 697,
+						"w": 235,
+						"h": 223
+					}
+				},
+				{
+					"filename": "Spark_00025.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 227,
+						"h": 227
+					},
+					"frame": {
+						"x": 867,
+						"y": 951,
+						"w": 227,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 226,
+						"h": 227
+					},
+					"frame": {
+						"x": 1096,
+						"y": 923,
+						"w": 226,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 11,
+						"w": 230,
+						"h": 226
+					},
+					"frame": {
+						"x": 1324,
+						"y": 922,
+						"w": 230,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 229,
+						"h": 226
+					},
+					"frame": {
+						"x": 924,
+						"y": 1180,
+						"w": 229,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 19,
+						"w": 226,
+						"h": 226
+					},
+					"frame": {
+						"x": 927,
+						"y": 1408,
+						"w": 226,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 237,
+						"h": 221
+					},
+					"frame": {
+						"x": 1527,
+						"y": 699,
+						"w": 237,
+						"h": 221
+					}
+				},
+				{
+					"filename": "Spark_00020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 226,
+						"h": 226
+					},
+					"frame": {
+						"x": 1556,
+						"y": 922,
+						"w": 226,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00026.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 226,
+						"h": 226
+					},
+					"frame": {
+						"x": 1155,
+						"y": 1152,
+						"w": 226,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 233,
+						"h": 224
+					},
+					"frame": {
+						"x": 1383,
+						"y": 1150,
+						"w": 233,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Spark_00003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 231,
+						"h": 225
+					},
+					"frame": {
+						"x": 1155,
+						"y": 1380,
+						"w": 231,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Spark_00027.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 228,
+						"h": 225
+					},
+					"frame": {
+						"x": 1388,
+						"y": 1376,
+						"w": 228,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Spark_00013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 17,
+						"w": 216,
+						"h": 226
+					},
+					"frame": {
+						"x": 1618,
+						"y": 1150,
+						"w": 216,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00043.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 14,
+						"w": 234,
+						"h": 223
+					},
+					"frame": {
+						"x": 1618,
+						"y": 1378,
+						"w": 234,
+						"h": 223
+					}
+				},
+				{
+					"filename": "Halo_00013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 69,
+						"y": 0,
+						"w": 181,
+						"h": 197
+					},
+					"frame": {
+						"x": 1766,
+						"y": 699,
+						"w": 181,
+						"h": 197
+					}
+				},
+				{
+					"filename": "Spark_00028.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 228,
+						"h": 224
+					},
+					"frame": {
+						"x": 1784,
+						"y": 898,
+						"w": 228,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Halo_00012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 70,
+						"y": 0,
+						"w": 180,
+						"h": 188
+					},
+					"frame": {
+						"x": 1836,
+						"y": 1124,
+						"w": 180,
+						"h": 188
+					}
+				},
+				{
+					"filename": "Halo_00011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 72,
+						"y": 0,
+						"w": 178,
+						"h": 175
+					},
+					"frame": {
+						"x": 1854,
+						"y": 1314,
+						"w": 178,
+						"h": 175
+					}
+				},
+				{
+					"filename": "Halo_00007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 73,
+						"y": 0,
+						"w": 168,
+						"h": 132
+					},
+					"frame": {
+						"x": 1854,
+						"y": 1491,
+						"w": 168,
+						"h": 132
+					}
+				},
+				{
+					"filename": "Spark_00038.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 233,
+						"h": 223
+					},
+					"frame": {
+						"x": 1155,
+						"y": 1607,
+						"w": 233,
+						"h": 223
+					}
+				},
+				{
+					"filename": "Spark_00039.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 234,
+						"h": 222
+					},
+					"frame": {
+						"x": 1390,
+						"y": 1603,
+						"w": 234,
+						"h": 222
+					}
+				},
+				{
+					"filename": "Halo_00080.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 40,
+						"y": 0,
+						"w": 210,
+						"h": 188
+					},
+					"frame": {
+						"x": 1626,
+						"y": 1603,
+						"w": 210,
+						"h": 188
+					}
+				},
+				{
+					"filename": "Halo_00082.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 39,
+						"y": 0,
+						"w": 196,
+						"h": 150
+					},
+					"frame": {
+						"x": 1838,
+						"y": 1625,
+						"w": 196,
+						"h": 150
+					}
+				},
+				{
+					"filename": "Halo_00004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 74,
+						"y": 0,
+						"w": 142,
+						"h": 115
+					},
+					"frame": {
+						"x": 1885,
+						"y": 373,
+						"w": 142,
+						"h": 115
+					}
+				},
+				{
+					"filename": "Halo_00009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 0,
+						"w": 219,
+						"h": 152
+					},
+					"frame": {
+						"x": 927,
+						"y": 1636,
+						"w": 219,
+						"h": 152
+					}
+				},
+				{
+					"filename": "Spark_00037.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 232,
+						"h": 222
+					},
+					"frame": {
+						"x": 885,
+						"y": 1790,
+						"w": 232,
+						"h": 222
+					}
+				},
+				{
+					"filename": "Halo_00081.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 39,
+						"y": 0,
+						"w": 211,
+						"h": 167
+					},
+					"frame": {
+						"x": 1119,
+						"y": 1832,
+						"w": 211,
+						"h": 167
+					}
+				},
+				{
+					"filename": "Halo_00003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 76,
+						"y": 0,
+						"w": 131,
+						"h": 112
+					},
+					"frame": {
+						"x": 1885,
+						"y": 490,
+						"w": 131,
+						"h": 112
+					}
+				},
+				{
+					"filename": "Spark_00036.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 19,
+						"w": 230,
+						"h": 222
+					},
+					"frame": {
+						"x": 1626,
+						"y": 1793,
+						"w": 230,
+						"h": 222
+					}
+				},
+				{
+					"filename": "Halo_00006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 71,
+						"y": 0,
+						"w": 164,
+						"h": 129
+					},
+					"frame": {
+						"x": 1858,
+						"y": 1777,
+						"w": 164,
+						"h": 129
+					}
+				},
+				{
+					"filename": "Halo_00008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 30,
+						"y": 0,
+						"w": 217,
+						"h": 141
+					},
+					"frame": {
+						"x": 1390,
+						"y": 1827,
+						"w": 217,
+						"h": 141
+					}
+				},
+				{
+					"filename": "Halo_00002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 80,
+						"y": 0,
+						"w": 105,
+						"h": 107
+					},
+					"frame": {
+						"x": 1858,
+						"y": 1908,
+						"w": 105,
+						"h": 107
+					}
+				},
+				{
+					"filename": "Halo_00001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 88,
+						"y": 0,
+						"w": 88,
+						"h": 99
+					},
+					"frame": {
+						"x": 1943,
+						"y": 1,
+						"w": 88,
+						"h": 99
+					}
+				}
+			]
+		},
+		{
+			"image": "halo-2.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1265,
+				"h": 910
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Spark_00017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 19,
+						"w": 225,
+						"h": 226
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 225,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 19,
+						"w": 225,
+						"h": 226
+					},
+					"frame": {
+						"x": 1,
+						"y": 229,
+						"w": 225,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00032.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 224,
+						"h": 227
+					},
+					"frame": {
+						"x": 1,
+						"y": 457,
+						"w": 224,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00035.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 19,
+						"w": 226,
+						"h": 223
+					},
+					"frame": {
+						"x": 1,
+						"y": 686,
+						"w": 226,
+						"h": 223
+					}
+				},
+				{
+					"filename": "Spark_00029.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 227,
+						"h": 224
+					},
+					"frame": {
+						"x": 227,
+						"y": 457,
+						"w": 227,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Spark_00033.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 224,
+						"h": 225
+					},
+					"frame": {
+						"x": 229,
+						"y": 683,
+						"w": 224,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Spark_00034.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 19,
+						"w": 225,
+						"h": 224
+					},
+					"frame": {
+						"x": 455,
+						"y": 683,
+						"w": 225,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Spark_00016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 18,
+						"w": 222,
+						"h": 227
+					},
+					"frame": {
+						"x": 228,
+						"y": 1,
+						"w": 222,
+						"h": 227
+					}
+				},
+				{
+					"filename": "Spark_00031.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 225,
+						"h": 223
+					},
+					"frame": {
+						"x": 228,
+						"y": 230,
+						"w": 225,
+						"h": 223
+					}
+				},
+				{
+					"filename": "Spark_00030.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 226,
+						"h": 222
+					},
+					"frame": {
+						"x": 452,
+						"y": 1,
+						"w": 226,
+						"h": 222
+					}
+				},
+				{
+					"filename": "Spark_00009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 12,
+						"w": 220,
+						"h": 228
+					},
+					"frame": {
+						"x": 455,
+						"y": 225,
+						"w": 220,
+						"h": 228
+					}
+				},
+				{
+					"filename": "Spark_00015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 18,
+						"w": 220,
+						"h": 226
+					},
+					"frame": {
+						"x": 456,
+						"y": 455,
+						"w": 220,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 18,
+						"w": 218,
+						"h": 226
+					},
+					"frame": {
+						"x": 677,
+						"y": 225,
+						"w": 218,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Halo_00079.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 0,
+						"w": 209,
+						"h": 216
+					},
+					"frame": {
+						"x": 680,
+						"y": 1,
+						"w": 209,
+						"h": 216
+					}
+				},
+				{
+					"filename": "Halo_00015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 68,
+						"y": 0,
+						"w": 182,
+						"h": 216
+					},
+					"frame": {
+						"x": 891,
+						"y": 1,
+						"w": 182,
+						"h": 216
+					}
+				},
+				{
+					"filename": "Spark_00012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 16,
+						"w": 214,
+						"h": 226
+					},
+					"frame": {
+						"x": 678,
+						"y": 453,
+						"w": 214,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Spark_00011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 15,
+						"w": 213,
+						"h": 226
+					},
+					"frame": {
+						"x": 682,
+						"y": 681,
+						"w": 213,
+						"h": 226
+					}
+				},
+				{
+					"filename": "Halo_00016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 68,
+						"y": 0,
+						"w": 182,
+						"h": 225
+					},
+					"frame": {
+						"x": 894,
+						"y": 453,
+						"w": 182,
+						"h": 225
+					}
+				},
+				{
+					"filename": "Halo_00023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 185,
+						"h": 250
+					},
+					"frame": {
+						"x": 1075,
+						"y": 1,
+						"w": 185,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Halo_00083.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 37,
+						"y": 0,
+						"w": 171,
+						"h": 135
+					},
+					"frame": {
+						"x": 897,
+						"y": 219,
+						"w": 171,
+						"h": 135
+					}
+				},
+				{
+					"filename": "Halo_00010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 72,
+						"y": 0,
+						"w": 178,
+						"h": 164
+					},
+					"frame": {
+						"x": 1070,
+						"y": 253,
+						"w": 178,
+						"h": 164
+					}
+				},
+				{
+					"filename": "Halo_00014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 69,
+						"y": 0,
+						"w": 181,
+						"h": 207
+					},
+					"frame": {
+						"x": 897,
+						"y": 680,
+						"w": 181,
+						"h": 207
+					}
+				},
+				{
+					"filename": "Halo_00019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 66,
+						"y": 0,
+						"w": 184,
+						"h": 247
+					},
+					"frame": {
+						"x": 1078,
+						"y": 419,
+						"w": 184,
+						"h": 247
+					}
+				},
+				{
+					"filename": "Halo_00018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 66,
+						"y": 0,
+						"w": 184,
+						"h": 241
+					},
+					"frame": {
+						"x": 1080,
+						"y": 668,
+						"w": 184,
+						"h": 241
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:69f3d459fbe927f9b3bd1e13306d84db:e46b81ac6f94849d0dc671e4aab141b1:9789f8046b4d36572e0a3cde680ddf9c$"
+	}
+}
