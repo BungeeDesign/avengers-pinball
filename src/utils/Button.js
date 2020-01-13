@@ -1,5 +1,5 @@
 class Button {
-  constructor(context, x, y, horizontalPadding, verticalPadding, fontSize, string, action, origin) {
+  constructor(context, x, y, horizontalPadding, verticalPadding, fontSize, string, action) {
     this.context = context;
     this.x = x;
     this.y = y;
@@ -8,7 +8,6 @@ class Button {
     this.fontSize = fontSize;
     this.text = string;
     this.action = action;
-    this.origin = this.initOrigin(origin);
     this.obj = this.createButton();
   }
 
@@ -29,22 +28,6 @@ class Button {
     }
 
     return style;
-  }
-
-  initOrigin(origin) {
-    if (typeof origin === "number") {
-      return {
-        x: origin,
-        y: origin
-      };
-    } else if (typeof origin === "object") {
-      return origin;
-    } else {
-      return {
-        x: 0.5,
-        y: 0.5
-      };
-    }
   }
 
   createButton() {

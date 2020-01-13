@@ -8,6 +8,8 @@ class Game extends Phaser.Scene {
   /*
     Here we are getting access to the data that was passed in via the
     Menu scene via the data param. We are also declaring some variables aswell as calling the getRandomTime() method.
+
+    @param {Object}
   */
   init(data) {
     this.isMobile = data.isMobile;
@@ -198,6 +200,8 @@ class Game extends Phaser.Scene {
   /*
     Creates a bar that is pre styled. Takes in x and y params for position. Used by createUI
     for the score and health bar.
+
+    @param {Number}
   */
   createUIBar(x, y, w, h) {
     const bar = this.add.graphics({ x: x, y: y });
@@ -225,6 +229,8 @@ class Game extends Phaser.Scene {
   /*
     The setPoint method simply sets the point for a particluar item on the board. An item param is passed in and is then
     ran through a switch statement which has the 3 items on the board that creates a point increase.
+
+    @param {String}
   */
   setPoint(item) {
     switch (item) {
@@ -243,6 +249,8 @@ class Game extends Phaser.Scene {
   /*
     The removeHealth method will remove health if the pinball has entered the pinball hole. The collisions param will check for only 1
     collison occurence this ensures that only 1 health point will be taken away.
+
+    @param {Number}
   */
   removeHealth(collisions) {
     if (collisions === 1) {
@@ -288,6 +296,8 @@ class Game extends Phaser.Scene {
 
     Once the animation is complete the velocity and bouch vales of the paddle are set to a default state this ensures that
     when the paddles are in the inactive state the active forces are not applied to the pinball if a collision occurs.
+
+    @param {Phaser.Sprite}
   */
   movePaddles(paddle) {
     if (paddle.texture.key === 'leftPaddle') {
@@ -339,6 +349,8 @@ class Game extends Phaser.Scene {
     The same logic is used within the paddle methods in which a velocity and bounce increase is set. In this
     case it is only set once the animation is complete, due to the last state of the animation being the state
     in which the launcher should exert force.
+
+    @param {Phaser.Sprite}
   */
   moveLauncher(launcher) {
     this.pullLauncher.play();
@@ -359,6 +371,8 @@ class Game extends Phaser.Scene {
 
   /*
     The boardLights method simply controls the board light animations via a switch statement.
+
+    @param {String}
   */
   boardLights(boardObj) {
     switch(boardObj) {
@@ -417,6 +431,8 @@ class Game extends Phaser.Scene {
     Here we are playing the animations that were created in the createSpriteAnimations() method.
     This method is called from the relevant collison that occur from the pinball. A simple switch
     statement runs the called animation.
+
+    @param {String}
   */
   playSpriteAnimations(animation) {
     switch (animation) {
