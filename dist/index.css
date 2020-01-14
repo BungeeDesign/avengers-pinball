@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Gothic';
+  src: url("./src/assets/fonts/GOTHICB.ttf");
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+#container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 48px;
+}
+
+.instructions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.instructions img {
+  width: 210px;
+}
+/*# sourceMappingURL=index.css.map */
