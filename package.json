@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
+    "deploy": "webpack ",
     "start": "webpack-dev-server --host 192.168.1.59 --config webpack/base.js --open"
   },
   "repository": {
